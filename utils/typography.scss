@@ -5,50 +5,13 @@
 h1 {
   color: $accentColor;
   font-size: 3.6rem;
-  font-family: $baseFont;
+  font-family: $baseFont, "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
   text-align: center;
-}
-h2 {
-  color: $accentColor;
-  font-size: 2.7rem;
-  font-family: $baseFont;
-}
-h3 {
-  color: $neutralLight;
-  font-size: 1.8rem;
-  font-family: $baseFont;
-  font-weight: 700;
 }
 p {
   @include baseFont;
 }
-li {
-  @include baseFont;
-}
 a {
-  @include baseFont;
-}
-label {
-  @include baseFont;
-}
-input {
-  @include baseFont;
-  background: none;
-  border: none;
-}
-textarea {
-  @include baseFont;
-  background: none;
-  border: none;
-  resize: none;
-}
-button {
-  @include baseFont;
-}
-li {
-  @include baseFont;
-}
-
-*::placeholder {
   @include baseFont;
 }
