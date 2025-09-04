@@ -1,0 +1,297 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Karla-Regular";
+  src: url("../assets/fonts/Karla-Regular.ttf");
+}
+h1 {
+  color: #2be8ac;
+  font-size: 3.6rem;
+  font-family: "Karla-Regular";
+  text-align: center;
+}
+
+h2 {
+  color: #2be8ac;
+  font-size: 2.7rem;
+  font-family: "Karla-Regular";
+}
+
+h3 {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  font-family: "Karla-Regular";
+  font-weight: 700;
+}
+
+p {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: "Karla-Regular";
+}
+
+li {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: "Karla-Regular";
+}
+
+a {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: "Karla-Regular";
+}
+
+label {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: "Karla-Regular";
+}
+
+input {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: "Karla-Regular";
+  background: none;
+  border: none;
+}
+
+textarea {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: "Karla-Regular";
+  background: none;
+  border: none;
+  resize: none;
+}
+
+button {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: "Karla-Regular";
+}
+
+li {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: "Karla-Regular";
+}
+
+*::placeholder {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: "Karla-Regular";
+}
+
+body {
+  background-color: #262626;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.visit-card {
+  background: linear-gradient(200deg, hsl(161, 20%, 20%) 1%, #313a37 35%, #262626);
+  padding: 5vh 5vw;
+  aspect-ratio: 3/2;
+  max-width: 500px;
+  border-radius: 11px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content max-content max-content 1fr;
+}
+.visit-card h1 {
+  grid-column: 1/4;
+  text-align: center;
+  margin: 0;
+}
+.visit-card p {
+  grid-column: 1/4;
+  text-align: center;
+  color: #2be8ac;
+  opacity: 0.5;
+  padding: 0.75em 0;
+}
+.visit-card p:nth-of-type(2) {
+  letter-spacing: 0.2em;
+  color: #fcfcfc;
+}
+.visit-card a {
+  margin: 5vh 15px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.visit-card svg {
+  width: 15px;
+  fill: #fcfcfc;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .visit-card {
+    transform: rotate(90deg);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

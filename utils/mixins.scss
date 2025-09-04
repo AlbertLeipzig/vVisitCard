@@ -1,0 +1,10 @@
+@use "./fonts" as *;
+@use "./colors" as *;
+
+@mixin baseFont($color: $neutralLight) {
+  color: $color;
+  font-size: 1.8rem;
+  max-width: 75ch;
+  font-weight: 100;
+  font-family: $baseFont;
+}
