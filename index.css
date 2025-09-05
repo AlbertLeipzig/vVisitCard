@@ -183,16 +183,16 @@ body {
   max-width: 500px;
   border-radius: 11px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: max-content max-content max-content 1fr;
 }
 .visit-card h1 {
-  grid-column: 1/4;
+  grid-column: 1/5;
   text-align: center;
   margin: 0;
 }
 .visit-card p {
-  grid-column: 1/4;
+  grid-column: 1/5;
   text-align: center;
   color: #2be8ac;
   opacity: 0.5;
