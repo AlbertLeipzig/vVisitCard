@@ -234,7 +234,7 @@ body {
   background: linear-gradient(200deg, hsl(161, 20%, 20%) 1%, #313a37 35%, #262626);
   padding: 5vh 5vw;
   aspect-ratio: 3/2;
-  width: fit-content;
+  width: 250px;
   border-radius: 11px;
 }
 .visit-card h1 {
@@ -250,6 +250,7 @@ body {
 .visit-card p:nth-of-type(2) {
   letter-spacing: 0.2em;
   color: #fcfcfc;
+  margin-bottom: 5vh;
 }
 .visit-card .links-container {
   display: flex;
@@ -257,7 +258,7 @@ body {
   width: fit-content;
 }
 .visit-card a {
-  margin: 5vh 15px 0;
+  margin: 5vh 0 0;
   display: flex;
   align-items: center;
   gap: 10px;
