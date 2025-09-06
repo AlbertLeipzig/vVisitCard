@@ -177,23 +177,71 @@ body {
   height: 100vh;
 }
 
-.visit-card {
-  background: linear-gradient(200deg, hsl(161, 20%, 20%) 1%, #313a37 35%, #262626);
+/* .visit-card {
+  background: linear-gradient(
+    200deg,
+    $accentColor--muted-dark 1%,
+    $neutralMedium-dark 35%,
+    $neutralDark
+  );
   padding: 5vh 5vw;
-  aspect-ratio: 3/2;
+  aspect-ratio: 3 / 2;
   max-width: 500px;
   border-radius: 11px;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: max-content max-content max-content 1fr;
+  h1 {
+    grid-column: 1 / 5;
+    text-align: center;
+    margin: 0;
+  }
+  p {
+    grid-column: 1 / 5;
+    text-align: center;
+    color: $accentColor;
+    opacity: 0.5;
+    padding: 0.75em 0;
+    &:nth-of-type(2) {
+      letter-spacing: 0.2em;
+      color: $neutralLight;
+    }
+  }
+  a {
+    margin: 5vh 15px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  svg {
+    width: 15px;
+    fill: $neutralLight;
+  }
+
+  @media screen and (max-width: 768px) and (orientation: portrait) {
+    transform: rotate(90deg);
+  }
+} */
+.visit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(200deg, hsl(161, 20%, 20%) 1%, #313a37 35%, #262626);
+  padding: 5vh 5vw;
+  aspect-ratio: 3/2;
+  width: fit-content;
+  border-radius: 11px;
 }
 .visit-card h1 {
-  grid-column: 1/5;
   text-align: center;
   margin: 0;
 }
 .visit-card p {
-  grid-column: 1/5;
   text-align: center;
   color: #2be8ac;
   opacity: 0.5;
@@ -203,22 +251,25 @@ body {
   letter-spacing: 0.2em;
   color: #fcfcfc;
 }
+.visit-card .links-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
 .visit-card a {
   margin: 5vh 15px 0;
-  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 .visit-card svg {
   width: 15px;
   fill: #fcfcfc;
 }
-@media screen and (max-width: 768px) and (orientation: portrait) {
-  .visit-card {
+.visit-card {
+  /*  @media screen and (max-width: 768px) and (orientation: portrait) {
     transform: rotate(90deg);
-  }
+  } */
 }
 
 /*# sourceMappingURL=index.css.map */
